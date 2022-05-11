@@ -1,11 +1,16 @@
 #include <stdio.h>
 int add(int a, int b);
 long long mul(int a, int b);
+long long sub(int a, int b);
 
 int main() {
+	char s;
 	int a, b;
-	scanf("%d %d", &a, &b);
-	printf("%d + %d = %d\n", a, b, add(a, b));
-	printf("%d + %d = %lld\n", a, b, mul(a, b));
+	scanf("%s %d %d", &s, &a, &b);
+	switch(s){
+		case '+': result = add(a,b); break;
+		case '-': result = sub(a,b); break;
+		case '*': result = mul(a,b); break;
+	}
+	printf("%lld\n", result);
 }
-
