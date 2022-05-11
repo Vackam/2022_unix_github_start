@@ -1,5 +1,5 @@
 #include <stdio.h>
-int add(int a, int b);
+long long add(int a, int b);
 long long mul(int a, int b);
 long long sub(int a, int b);
 
