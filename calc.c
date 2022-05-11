@@ -6,6 +6,7 @@ long long sub(int a, int b);
 int main() {
 	char s;
 	int a, b;
+	long long result;
 	scanf("%s %d %d", &s, &a, &b);
 	switch(s){
 		case '+': result = add(a,b); break;
